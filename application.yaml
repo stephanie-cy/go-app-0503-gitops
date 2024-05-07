@@ -4,6 +4,12 @@ metadata:
   name: go-app-0503
   namespace: rhtap
   finalizers: ["resources-finalizer.argocd.argoproj.io"] 
+  labels:
+    rhtap/gitops: go-app-0503 
+    janus-idp.io/tekton: go-app-0503
+    backstage.io/kubernetes-id: go-app-0503
+    backstage.io/kubernetes-namespace: rhtap-app 
+    app.kubernetes.io/part-of: go-app-0503
 spec:
   project: default
   source:
